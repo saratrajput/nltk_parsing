@@ -1,5 +1,5 @@
 # coding: utf-8
-get_ipython().magic('load ai_hw_2.py')
+#get_ipython().magic('load ai_hw_2.py')
 # %load ai_hw_2.py
 ###
 # This is for using in ipython(not important)
@@ -116,111 +116,111 @@ width = 0.5
 plt.bar(indexes, values, width)
 plt.xticks(indexes + width * 0.5, labels)
 plt.tight_layout()
-plt.show()
+#plt.show()
 #https://stackoverflow.com/questions/19198920/using-counter-in-python-to-build-histogram
 
 ## Large grammar
 len(sentences[ind])
-my_grammar = nltk.data.load('grammars/large_grammars/atis.cfg')
+#my_grammar = nltk.data.load('grammars/large_grammars/atis.cfg')
 import nltk
-my_grammar = nltk.data.load('grammars/large_grammars/atis.cfg')
-my_grammar
-test_sent = sentences[ind]
-test_sent
-my_parser = ChartParser(my_grammar)
+#my_grammar = nltk.data.load('grammars/large_grammars/atis.cfg')
+#my_grammar
+#test_sent = sentences[ind]
+#test_sent
+#my_parser = ChartParser(my_grammar)
 from nltk import load_parser
-my_parser = ChartParser(my_grammar)
+#my_parser = ChartParser(my_grammar)
 from nltk import pos_tag, word_tokenize, CFG
-my_parser = ChartParser(my_grammar)
-my_parser = nltk.ChartParser(my_grammar)
-my_sent
-test_sent
-for i in my_parser.parse(test_sent):
-    print 8
-for i in my_parser.parse(test_sent):
-    print(i)
-    break
-test_sent1 = "The sun rises in the east."
-for i in my_parser.parse(test_sent1):
-    print(i)
-    break
-parser
-my_parser
-chart = my_parser.parse(test_sent)
-print((chart.num_edges()))
-chart
-chart = my_parser.parse(test_sent)
-parser = nltk.parse.BottomUpChartParser(grammar)
-grammar
-my_grammar
-parser = nltk.parse.BottomUpChartParser(my_grammar)
-chart = parser.chart_parse(test_sent)
-parser = nltk.parse.LeftCornerChartParser(my_grammar)
-chart = parser.chart_parse(test_sent)
-parser = nltk.parse.TopDownChartParser(my_grammar)
-chart = parser.chart_parse(test_sent)
-parser = nltk.parse.TopDownChartParser(my_grammar)
-chart = parser.chart_parse(test_sent1)
-new_sentences = nltk.data.load('grammars/large_grammars/atis_sentences.txt')
-new_sentences = nltk.parse.util.extract_test_sentences(new_sentences)
-len(new_sentences)
-testsentence = new_sentences[22]
-testsentences[0]
-testsentence[0]
-new_sentence = testsentence[0]
-parser = nltk.parse.BottomUpChartParser(my_grammar)
-chart = parse.chart_parse(new_sentence)
-chart = parser.chart_parse(new_sentence)
-print((len(list(chart.parses(grammar.start())))))
-print((len(list(chart.parses(my_grammar.start())))))
-parser
-for i in parser.parse(testsentence):
-    print i
-for i in parser.parse(testsentence):
-    print(i)
-    break
-testsentence
-testy = ['show', 'me', 'northwest', 'flights', 'to', 'detroit', '.']
-for i in parser.parse(testy):
-    print(i)
-    break
-sentences[ind]
-sentences[10]
-type(sentences[10])
-testy = ['show', 'me', 'northwest', 'flights', 'to', 'detroit', '.']
-type(testy)
-testy_new = ['That','object','which','seemed','to','be','created','by','the','entanglement','of','two','corkscrews','was','really','the','key','.']
-for i in parser.parse(testy_new):
-    print(i)
-    break
-for i in parser.parse(testy):
-    print(i)
-    break
-testy = ['show', 'me','that', 'northwest', 'flights', 'to', 'detroit', '.']
-for i in parser.parse(testy):
-    print(i)
-    break
-testy = ['show', 'me', 'northwest', 'flights', 'to', 'detroit', '.']
-for i in parser.parse(testy):
-    print(i)
-    break
-testy_new = ['that','object','which','seemed','to','be','created','by','the','entanglement','of','two','corkscrews','was','really','the','key','.']
-for i in parser.parse(testy_new):
-    print(i)
-    break
-testy = ['show', 'me', 'northwest', 'objects', 'to', 'detroit', '.']
-for i in parser.parse(testy):
-    print(i)
-    break
+#my_parser = ChartParser(my_grammar)
+#my_parser = nltk.ChartParser(my_grammar)
+#my_sent
+#test_sent
+#for i in my_parser.parse(test_sent):
+#    print 8
+#for i in my_parser.parse(test_sent):
+#    print(i)
+#    break
+#test_sent1 = "The sun rises in the east."
+#for i in my_parser.parse(test_sent1):
+#    print(i)
+#    break
+#parser
+#my_parser
+#chart = my_parser.parse(test_sent)
+#print((chart.num_edges()))
+#chart
+#chart = my_parser.parse(test_sent)
+#parser = nltk.parse.BottomUpChartParser(grammar)
+#grammar
+#my_grammar
+#parser = nltk.parse.BottomUpChartParser(my_grammar)
+#chart = parser.chart_parse(test_sent)
+#parser = nltk.parse.LeftCornerChartParser(my_grammar)
+#chart = parser.chart_parse(test_sent)
+#parser = nltk.parse.TopDownChartParser(my_grammar)
+#chart = parser.chart_parse(test_sent)
+#parser = nltk.parse.TopDownChartParser(my_grammar)
+#chart = parser.chart_parse(test_sent1)
+#new_sentences = nltk.data.load('grammars/large_grammars/atis_sentences.txt')
+#new_sentences = nltk.parse.util.extract_test_sentences(new_sentences)
+#len(new_sentences)
+#testsentence = new_sentences[22]
+#testsentences[0]
+#testsentence[0]
+#new_sentence = testsentence[0]
+#parser = nltk.parse.BottomUpChartParser(my_grammar)
+#chart = parse.chart_parse(new_sentence)
+#chart = parser.chart_parse(new_sentence)
+#print((len(list(chart.parses(grammar.start())))))
+#print((len(list(chart.parses(my_grammar.start())))))
+#parser
+#for i in parser.parse(testsentence):
+#    print i
+#for i in parser.parse(testsentence):
+#    print(i)
+#    break
+#testsentence
+#testy = ['show', 'me', 'northwest', 'flights', 'to', 'detroit', '.']
+#for i in parser.parse(testy):
+#    print(i)
+#    break
+#sentences[ind]
+#sentences[10]
+#type(sentences[10])
+#testy = ['show', 'me', 'northwest', 'flights', 'to', 'detroit', '.']
+#type(testy)
+#testy_new = ['That','object','which','seemed','to','be','created','by','the','entanglement','of','two','corkscrews','was','really','the','key','.']
+#for i in parser.parse(testy_new):
+#    print(i)
+#    break
+#for i in parser.parse(testy):
+#    print(i)
+#    break
+#testy = ['show', 'me','that', 'northwest', 'flights', 'to', 'detroit', '.']
+#for i in parser.parse(testy):
+#    print(i)
+#    break
+#testy = ['show', 'me', 'northwest', 'flights', 'to', 'detroit', '.']
+#for i in parser.parse(testy):
+#    print(i)
+#    break
+#testy_new = ['that','object','which','seemed','to','be','created','by','the','entanglement','of','two','corkscrews','was','really','the','key','.']
+#for i in parser.parse(testy_new):
+#    print(i)
+#    break
+#testy = ['show', 'me', 'northwest', 'objects', 'to', 'detroit', '.']
+#for i in parser.parse(testy):
+#    print(i)
+#    break
 sentences[ind]
 [x.lower() for x in sentences[ind]]
 tamarah = [x.lower() for x in sentences[ind]]
-for i in parser.parse(tamarah):
-    print(i)
-    break
+#for i in parser.parse(tamarah):
+#    print(i)
+#    break
 tamarah
 tam_string = ' '.join(tamarah)
 tam_string
 tag_tam = nltk.word_tokenize(tam_string)
 nltk.pos_tag(tag_tam)
-get_ipython().magic('save ai_hw_3.py 1-82')
+#get_ipython().magic('save ai_hw_3.py 1-82')
