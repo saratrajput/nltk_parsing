@@ -18,9 +18,9 @@ from nltk.corpus import gutenberg
 gutenberg.fileids()
 
 # load book from gutenberg
-emma = gutenberg.words('austen-sense.txt')
-emma
-gutenberg.fileids()
+#emma = gutenberg.words('austen-sense.txt')
+#emma
+#gutenberg.fileids()
 
 # Number of sentences
 #num_sents = len(gutenberg.sents('austen-emma.txt'))
@@ -113,5 +113,9 @@ width = 0.5
 plt.bar(indexes, values, width)
 plt.xticks(indexes + width * 0.5, labels)
 plt.tight_layout()
-plt.show()
+#plt.show()
 #https://stackoverflow.com/questions/19198920/using-counter-in-python-to-build-histogram
+
+## Large grammar
+
+
