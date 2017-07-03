@@ -222,5 +222,5 @@ tamarah
 tam_string = ' '.join(tamarah)
 tam_string
 tag_tam = nltk.word_tokenize(tam_string)
-nltk.pos_tag(tag_tam)
+list_of_tokesn = nltk.pos_tag(tag_tam)
 #get_ipython().magic('save ai_hw_3.py 1-82')
