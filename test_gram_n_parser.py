@@ -133,3 +133,45 @@ tam_string = ' '.join(tamarah)
 tam_string
 tag_tam = nltk.word_tokenize(tam_string)
 list_of_tokesn = nltk.pos_tag(tag_tam)
+
+########################################
+
+# load atis grammar from large grammar
+
+grammar = nltk.data.load('grammars/large_grammars/atis.cfg')
+
+# to use Top Down Chart Parser with large grammar
+parser = nltk.TopDownChartParser(grammar, trace = 2)
+for tree in parser.parse(test_sent):
+    print(tree)
+
+# simple grammar    
+grammar1 = nltk.CFG.fromstring("""
+    S -> NP VP
+    VP -> V NP | V NP PP
+    PP -> P NP
+    V -> 'saw' | 'ate' | 'walked'
+    NP -> 'Jonh' | 'Mary' | 'Bob' | Det N | Det N PP
+    Det -> 'a' | 'an' | 'the' | 'my'
+    N -> 'man' | 'dog' | 'cat' | 'telescope' | 'park'
+    P -> 'in' | 'on' | 'by' | 'with'
+""")
+
+# to use Top Down Chart Parser with simple grammar
+parser = nltk.TopDownChartParser(grammar1, trace = 2)
+   
+# load test sent with all lower characters 
+test_sent = [x.lower() for x in sentences[ind]]
+test_sent
+
+# test parser
+for tree in parser.parse(test_sent):
+    print(tree)
+
+
+# error: input words missing    
+#parser = nltk.TopDownChartParser(grammar, trace = 2)
+#for tree in parser.parse(test_sent):
+#    print(tree)
+    
+    
