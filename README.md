@@ -6,7 +6,7 @@ these texts for any extremely long sentences. What is the longest sentence you
 can find? What syntacticconstruction(s) are responsible for such long sentences?
 
 ## Problems Encountered
-- There is a 'problem' with the longest sentence chosen by NLTK. It is also
+- There is a problem with the longest sentence chosen by NLTK. It is also
 considering punctuations like '--' at the beginning of the sentence which
 makes it pick the wrong longest sentence.
 
